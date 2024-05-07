@@ -1,0 +1,25 @@
+[{
+    "id": "001a",
+    "nombre": "Luis",
+    "apellido": "Fernández",
+    "segundoNombre": null,
+    "edad": 30,
+    "hijos": [
+        "Ana",
+        "Luisa",
+        "Marcelo"
+    ]
+}, 
+{
+    "id": "002a",
+    "nombre": "Luis",
+    "apellido": "Fernández",
+    "segundoNombre": null,
+    "edad": 30,
+    "hijos": [
+        "Ana",
+        "Un json es practicamente un objeto con estructura parecida a un array se pueden consumir para usarlos en distintas aplicaciones ",
+        "Diferencia fundamental entre array y json es que si bien ambas son estructuras pero ya no utilizamos las referencias de indices si no que ahora viene dado por la 'clave' son como 'parámetros' de un objeto."
+    ]
+}
+]
