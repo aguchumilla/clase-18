@@ -80,3 +80,59 @@ let autosNuevos2 = ["Honda","Hyundai"];
 autos = autos.concat(autosNuevos1,autosNuevos2);
 
 console.log("El nuevo arreglo concatenado es: " + autos);
+
+
+
+/*********************/
+
+// ------------ Los strings --------------- 
+
+let txt= "Hola que tal";
+
+//Son un array, por eso tienen longitud.
+console.log(txt.length);
+let txt1 = "sahdkajs"
+// Se evidencian los índices del String. 
+for(let index in txt){
+    console.log(index);
+}
+txt = txt.concat(txt1);
+console.log(txt);
+
+// -------- OBJETOS LITERALES ------------ 
+let personal = {
+    // Atributos clave-valor
+    nombre:"Luis Alfredo",
+    apellido: "Rodriguez",
+    id: "000a1"
+    // ,obtenerNombres() {
+    //     console.log(this.nombre+" "+ this.apellido);
+    // }
+};
+let personal2= {nombre:"Luis Alfredo",  apellido: "Rodriguez", id: "000a1"};
+
+// personal.obtenerNombres();
+console.log(personal.nombre);
+console.log(personal.id);
+
+// Json, se pasa personal a notacion JSON.
+let jsonPersonal = `{
+    "personal":{
+        "nombre":"Luis Alfredo",
+        "apellido":"Rodriguez",
+        "id":"000a1"
+    },
+    "personal1":{
+        "nombre":"Luisa",
+        "apellido":"Lopez",
+        "id":"000a2" 
+    }
+}`;
+
+// Consumir datos de json
+// 1 - Se transforma json a algo legible por JS
+let personalObjeto = JSON.parse(jsonPersonal); /* .parse(Datos) lo que hace es pasar los datos para usarlos como objeto */
+
+// A partir de esta linea se puede trabajar como objeto.
+console.log(personalObjeto.personal.nombre);
+console.log("ID: "+ personalObjeto.personal1.id+ "\nNombre y Apellido: "+ personalObjeto.personal1.nombre+" "+personalObjeto.personal1.apellido);
